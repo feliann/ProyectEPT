@@ -1,0 +1,30 @@
+body {
+  overflow: hidden;
+}
+
+#map {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.leaflet-touch .leaflet-control-zoom {
+  display: none;
+}
+
+#Aceptar {
+  position: absolute;
+  top: 10px;
+  left: 1320px;
+  width: 34px;
+  height: 32px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+

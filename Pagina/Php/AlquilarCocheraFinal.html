@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquilar Cochera</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+<header>
+
+<div class="titulo">
+  <h1>Alquilar Cochera</h1>   
+</div>
+
+<header>
+  <div class="subtitulo">
+    <h3>Estas son las cocheras disponibles:</h3>
+  </div>
+
+<div class="tabla">
+  <body onload = "table();">
+    <script type="text/javascript">
+      function table(){
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function(){
+          document.getElementById("table").innerHTML = this.responseText;
+        }
+        xhttp.open("GET", "system.php");
+        xhttp.send();
+      }
+
+      setInterval(function(){
+        table();
+      }, 1);
+    </script>
+    <div id="table">
+      
+    </div>
+</div>
+ 
+</div>
+  </body>
+
+<div class="formulario">
+  <form action="http://localhost/proyecto/ProyectoEPT/Pagina/Php/PaginaPrincipal.html">
+    <input type="submit" value= "Volver a la pagina principal" name="VolverPrincipal" id="volver" >
+    </form>
+</div>
+<div class="formulario">
+  <form action="./AlquilarCochera.html">
+    <input type="submit" value= "Más datos" name="MasDatos" id="datos" >
+  </form>
+</div>
+
+
+
+</body>
+</html>
